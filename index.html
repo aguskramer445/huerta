@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huerta Inteligente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Panel de Monitoreo - Huerta Inteligente</h1>
+  </header>
+
+
+  <main>
+    <section class="sensor">
+      <h2>Temperatura</h2>
+      <p id="temp-value">-- °C</p>
+      <div id="temp-status" class="status"></div>
+    </section>
+
+
+    <section class="sensor">
+      <h2>Humedad Ambiental</h2>
+      <p id="humedad-value">-- %</p>
+      <div id="humedad-status" class="status"></div>
+    </section>
+
+
+    <section class="sensor">
+      <h2>Humedad del Suelo</h2>
+      <p id="suelo-value"></p>
+      <div id="suelo-status" class="status"></div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>Proyecto de monitoreo en tiempo real con Firebase y Arduino</p>
+  </footer>
+
+  <script type="module" src="java.js"></script>
+</body>
+</html>
