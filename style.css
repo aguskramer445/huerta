@@ -1,33 +1,119 @@
 
 body {
-  background: #111;
-  color: #e6e6e6;
-  font-family: Arial, sans-serif;
   margin: 0;
+  background-size: cover;
+  background-color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  text-align: center;
+  color: white;
 }
+
+.presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.card-presentacion {
+  background: #222;
+  padding: 40px;
+  border-radius: 16px;
+  width: 85%;
+  max-width: 420px;
+  box-shadow: 0 0 25px rgba(255, 136, 204, 0.4);
+  border: 2px solid #ff88cc;
+  transition: 0.3s;
+}
+
+.card-presentacion:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 136, 204, 0.6);
+}
+
+.card-presentacion h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff88cc;
+}
+
+.card-presentacion p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4cc2;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
 
 header {
-  background: #009688;
-  padding: 18px;
-  text-align: center;
-  font-size: 1.7rem;
+  padding: 30px 0;
+  color: #cde87a;
+  font-size: 1.8rem;
   font-weight: bold;
+  background: #1a1a1a;
+  margin-bottom: 40px;
 }
-
-.panel {
-  padding: 30px;
+.tabla-section {
+  margin-top: 40px;
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  max-width: 600px;
+  justify-content: center;
+  width: 100%;
+}
+
+table {
   margin: auto;
+  width: 85%;
+  max-width: 450px;
+  font-size: 22px;
+  background: #222;
+  border-radius: 10px;
+  border-collapse: collapse;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 160px 120px 1fr;
-  align-items: center;
-  gap: 15px;
-  font-size: 1.2rem;
+th {
+  background: #333;
+  color: #ff88cc;
+  padding: 12px;
+  text-transform: uppercase;
 }
 
+td {
+  padding: 15px;
+  border-top: 1px solid #444;
+  color: #f5d0ff;
+}
+
+.fila {
+  margin-bottom: 20px;
+}
+
+.estado {
+  font-weight: bold;
+  margin: 3px 0 6px;
+}
+
+.barra {
+  width: 60%;          
+  height: 12px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+
+.barra-interna {
+  height: 100%;
+  width: 0%;
+  transition: 0.4s;
+}

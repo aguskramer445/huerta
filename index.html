@@ -3,30 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
   <title>Huerta Monitor</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
   <header>
-    <h1>Monitor de Huerta - Agustin Kramer</h1>
+    Monitor de Huerta - Agustin Kramer
   </header>
 
-  <section class="panel">
-    <div class="row">
-      <h2>Temperatura:</h2>
-      <span id="tempValue">-- °C</span>
-    </div>
+  <section>
+    <table>
+      <tr>
+        <th>Variable</th>
+        <th>Valor</th>
+      </tr>
 
-    <div class="row">
-      <h3>Humedad Aire:</h3>
-      <span id="humedadValue">-- %</span>
-    </div>
+      <tr>
+        <td>Temperatura</td>
+        <td id="tempValue">-- °C</td>
+      </tr>
 
-    <div class="row">
-      <h4>Humedad Suelo:</h4>
-      <span id="sueloValue">-- %</span>
-    </div>
+      <tr>
+        <td>Humedad Aire</td>
+        <td id="humedadValue">-- %</td>
+      </tr>
+
+      <tr>
+        <td>Humedad Suelo</td>
+        <td id="sueloValue">-- %</td>
+      </tr>
+    </table>
   </section>
+
+  <div class="fila">
+    <p>Temperatura: <span id="tempValue"></span></p>
+    <p class="estado" id="tempEstado"></p>
+
+    <div class="barra">
+        <div id="tempBar" class="barra-interna"></div>
+    </div>
+</div>
+
+<div class="fila">
+    <p>Humedad Aire: <span id="humedadValue"></span></p>
+    <p class="estado" id="humedadEstado"></p>
+
+    <div class="barra">
+        <div id="humedadBar" class="barra-interna"></div>
+    </div>
+</div>
+
+<div class="fila">
+    <p>Humedad Suelo: <span id="sueloValue"></span></p>
+    <p class="estado" id="sueloEstado"></p>
+
+    <div class="barra">
+        <div id="sueloBar" class="barra-interna"></div>
+    </div>
+</div>
+
 
   <script type="module" src="java.js"></script>
 </body>
